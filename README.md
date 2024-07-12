@@ -35,7 +35,7 @@ After the transfer, it encodes the function call to onTokenTransfer with paramet
 This encoded call is then executed on the recipient contract using the call function.
 The call function returns a tuple indicating success (bool success) and additional data (ignored in this case).
 If the call to the recipient contract fails (success is false), the function reverts the transaction.
-# Impact:
+## Impact:
 Functionality: Enhances token usability by enabling token transfers to trigger specific actions in recipient contracts, such as updating user balances or executing complex logic.
 Security: Ensures that the recipient contract properly handles the callback, reducing risks associated with misdirected transfers.
 Integration: Facilitates integration with other smart contracts and dApps, allowing for broader use cases beyond simple token transfers.
